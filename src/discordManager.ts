@@ -172,8 +172,8 @@ async function createDiscordClientForBot(
     const isMentioned = message.mentions.users.has(botUser.id);
     const containsBotName = message.content.toLowerCase().includes(botUsername);
 
-    // Ignore if the bot is not mentioned or referenced
-    if (!isMentioned && !containsBotName) return;
+
+    
 
     try {
       // Show typing indicator
